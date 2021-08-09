@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
 
 body{
     padding: 0;
@@ -41,6 +42,10 @@ section{
 }
 .sec6{
     background-color: #d74680;
+}
+
+.sec7{
+    background-color: #3c5499;
 }
 
 header{
@@ -246,22 +251,120 @@ li:hover, .btn:hover{
 
 .feedback  {
     display: flex;
+    place-content: space-around;
+    margin: auto;
+    width: 75%;
 }
 
 q{
-    font-size: 14pt;
+    font-size: 16pt;
     font-style: italic;
     text-align: left;
-    width: 50%;
+    display: flex;
+    quotes: none;
+    margin-bottom: 30px;
 }
 
-.feedback .photo{
+.phot{
     width: 100px;
     height: 100px;
+    background-color: #787878;
+    float: left;
+    margin-right: 50px;
+    border-radius: 50%;
 }
 
-.fd1{
+.fd1, .fd2, .fd3, .fd4{
+    display: inline-block;
+    width: 40%;
+}
+
+.name{
+    font-size: 18pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.feedback .who {
+    color: #ffdd99;
+    margin-top: -5px;
+    text-align: left;
+}
+
+.quote{
     display: flex;
-    justify-content: start;
-    width: 35%;
+    flex-flow: column;
+}
+
+.form {
+    width: 60%;
+    margin: auto;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    width: 45%;
+    border-radius: 4px;
+    background-color: #273a71;
+    text-transform: capitalize;
+    font-family: "Titillium Web", sans-serif;
+    border: none;
+    font-size: 16pt;
+    height: 56px;
+    margin-bottom: 40px;
+    padding: 0px 20px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 4px;
+    background-color: #273a71;
+    text-transform: capitalize;
+    font-family: "Titillium Web", sans-serif;
+    border: none;
+    font-size: 16pt;   
+    padding: 20px 20px; 
+}
+
+.star{
+    color: red;
+}
+
+input::placeholder, textarea::placeholder  {
+    color: white;
+  }
+
+.form .btn{
+    background-color: #30bae7;
+    border-color: #299ec5;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: auto;
+}
+footer{
+    background-color: rgb(52, 75, 142);
+    height: 113px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.f{
+    font-size: 18pt;
+    padding: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100px;
+}
+.f:hover{
+    cursor: pointer;
+    color: #299ec5;
 }
